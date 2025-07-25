@@ -1,0 +1,1060 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+a{
+    color: #2162a1;;
+}
+body{
+    width: 100%;
+    background-color: #e3e6e6;
+    align-items: center;
+}
+.site{
+    position: relative;
+    width: 100vh;
+    height: 100%;
+    background-color: #e3e6e6;
+    overflow-x: hidden;
+}
+.header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: start;
+}
+.nav_bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #131921;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+}
+.nav_left {
+    display: flex;
+    flex-direction: row;
+    width: 210px;
+}
+.nav_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+}
+#amazon_logo {
+    position: relative;
+    width: 113px;
+    height: 50px;
+    padding: 15px 10px 10px 10px;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+}
+#amazon_logo:hover {
+    border: 1.5px solid white;
+}
+.nav_logo a{
+    text-decoration: none;
+    color: white;
+}
+.location{
+    flex-direction: column;
+    width: 90px;
+    height: 50px;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+}
+.location:hover {
+    border: 1.5px solid white;
+}
+.location_address{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.location #delivery_to {
+    position: relative;
+    text-align: center;
+    margin-left: 25px;
+    color: #ccc;
+    font-size: 12px;
+}
+.location_address i{
+    position: relative;
+    right: 5px;
+}
+.location #update_location {
+    font-weight: 700;
+}
+.nav_search{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    margin-left: 10px;
+}
+.nav_search form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav_search #catagory {
+    width: 50px;
+    max-width: 200px;
+    height: 100%;
+    background-color: #e6e6e6;
+    border-radius: 5px 0 0 5px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    z-index: 10;
+}
+.nav_search #catagory:active , #catagory:hover {
+    outline: 2px solid #ffac12;
+}
+#catagory option{
+    background-color: white;
+    color: black;
+}
+.nav_search .nav_search_input {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+.nav_search_button {
+    position: relative;
+    float: right;
+    width: 60px;
+    height: 100%;
+    background-color: #febd69;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav_right{
+    display: flex;
+    flex-direction: row;
+    min-width: 460px;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10px;
+}
+.nav_right .select_lang{
+    position: relative;
+    display: flex;
+    flex-direction: row;    
+    width: auto;
+    height: 50px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 4px;
+    align-items: self-end;
+    border: 1.5px solid transparent;
+    margin-right: 10px;
+}
+.nav_right .select_lang:hover {
+    border: 1.5px solid white;
+}
+.nav_right .select_lang a{
+    text-decoration: none;
+    color: white;
+}
+.nav_right .select_lang #flag{
+    position: relative;
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/206/206626.png");
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+}
+.nav_right .select_lang .lang{
+    font-weight: 600;
+}
+.nav_right .account{
+    width: auto;
+    height: 50px;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    margin-right: 10px;
+}
+.account:hover {
+    border: 1.5px solid white;
+}
+.account p{
+    color: white;
+}
+.account #hello{
+    font-size: 12px;
+    font-weight: 500;
+}
+.account #acc{
+    font-size: 15px;
+    font-weight: 500;
+}
+.profile{
+    position: relative;
+    display: inline-flex;
+}
+.account .profile i{
+    margin-left: 5px;
+}
+.orders{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.orders:hover {
+    border: 1.5px solid white;
+}
+.orders .return, .order{
+    color: white;
+}
+.orders .return{
+    font-size: 10px;
+    font-weight: 400;
+}
+.orders .order{
+    font-size: 15px;
+    font-weight: 500;
+}
+.cart{
+    position: relative;
+    display: inline-flex;
+    width: 90px;
+    height: 50px;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.cart:hover {
+    border: 1.5px solid white;
+}
+.cart a{
+    width: 90px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart a i{
+    position: absolute;
+    font-size: 25px;
+    top: 20px;
+    left: 10px;
+}
+.cart a .cart_count{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.cart a p{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.menu_bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 39px;
+    background-color: #232f3e;
+    align-content: center;
+}
+.menu_bar a{
+    color: white;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid transparent;
+}
+.menu_bar a:hover{
+    border: 1px solid white;
+}
+.content_box{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.content_container {
+    position: relative;
+    max-width: 1400px;
+    height: auto;
+    background: linear-gradient(0deg, #E3E6E6, transparent);
+    z-index: 100;
+    overflow: hidden;
+}
+.content_container::before{
+    content: "You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to amazon.in";
+    position: absolute;
+    left: 18px;
+    width: 97.2%;
+    top: 263px;
+    height: 35px;
+    background-color: #E3E6E6;
+    text-align: center;
+    align-content: center;
+    z-index: 1;
+}
+.bg_img{
+    background-image: url("https://m.media-amazon.com/images/I/81P2PSNtywL._SX3000_.jpg");
+    height: 312px;
+    background-size: cover;
+}
+.bg_img::before{
+    content: "";
+    position: absolute;
+    top: 255px;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(0deg, #e3e6e6, #010101);
+}
+.content_container .product_container_first{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+}
+.product_container_first .product_box_for_1{
+    position: relative;
+    width: 310px;
+    height: 420px;
+    background: white;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+.product_container_first .product_box_for_1{
+   padding: 20px;
+}
+.product_box_for_1 h1{
+    font-size: 21px;
+    font-weight: 700;
+}
+.product_box_for_1 .shoping_items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 317px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.shoping_items div{
+    position: relative;
+    width: 46%;
+    height: 123px;
+    background-size: cover;
+    background-position: center;
+}
+/* .shoping_items .jackets, .jewelry{
+    margin-bottom: 0px;
+} */
+.shoping_items .dress{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg");
+}
+.shoping_items .dress::before{
+    content: "Dresses";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.shoping_items .knits{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg");
+}
+.shoping_items .knits::before{
+    content: "Knits";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.shoping_items .jackets{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg");
+}
+.shoping_items .jackets::before{
+    content: "Jackets";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.shoping_items .jewelry{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg");
+}
+.shoping_items .jewelry::before{
+    content: "Jewelry";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.get_games .shoping_items{
+    position: relative;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product_container_first .explore_link{
+    position: absolute;
+    bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.home_essentials .shoping_items{
+    height: 262px;
+    justify-content: space-between;
+}
+.home_essentials #shop_item_difr_size{
+    position: relative;
+    width: 46%;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+}
+.home_essentials .home_decor, .bedding{
+    margin-top: 25px;
+}
+.home_essentials .shoping_items .cleaning_tool{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg");
+}
+.home_essentials .shoping_items .cleaning_tool::before{
+    content: "Cleaning Tools";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.home_essentials .shoping_items .home_storage{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_1x._SY116_CB563137408_.jpg");
+}
+.home_essentials .shoping_items .home_storage::before{
+    content: "Home Storage";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.home_essentials .shoping_items .home_decor{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg");
+}
+.home_essentials .shoping_items .home_decor::before{
+    content: "Home Decor";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.home_essentials .shoping_items .bedding{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_1x._SY116_CB563137408_.jpg");
+}
+.home_essentials .shoping_items .bedding::before{
+    content: "Bedding";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.fashion_for_less .jeans_under{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg");
+}
+.fashion_for_less .shoping_items .jeans_under::before{
+    content: "Jeans under $50";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.fashion_for_less .tops_under{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg");
+}
+.fashion_for_less .tops_under::before{
+    content: "Tops under $50";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.fashion_for_less .dresses_under{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg");
+}
+.fashion_for_less .dresses_under::before{
+    content: "Dresses under $50";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.fashion_for_less .shoes_under{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg");
+}
+.fashion_for_less .shoes_under::before{
+    content: "Shoes under $50";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.kitchen_appliances .shoping_items .cooker{
+    background-image: url("https://m.media-amazon.com/images/I/313wAT6Iy2L._SY160_.jpg");
+}
+.kitchen_appliances .shoping_items .cooker::before{
+    content: "Cooker";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.kitchen_appliances .shoping_items .coffee{
+    background-image: url("https://m.media-amazon.com/images/I/21W7-lndINL._SY75_.jpg");
+}
+.kitchen_appliances .shoping_items .coffee::before{
+    content: "Coffee";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.kitchen_appliances .shoping_items .pots_and_pans{
+    background-image: url("https://m.media-amazon.com/images/I/21B-NkA9p-L._SY75_.jpg");
+}
+.kitchen_appliances .shoping_items .pots_and_pans::before{
+    content: "Pots and Pans";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.kitchen_appliances .shoping_items .kettles{
+    background-image: url("https://m.media-amazon.com/images/I/217GQ1a2QzL._SY75_.jpg");
+}
+.kitchen_appliances .shoping_items .kettles::before{
+    content: "Kettles";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.under_50 .shoping_items{
+    height: 262px;
+}
+.under_50 .shoping_items #under_50_difer_size{
+    position: relative;
+    width: 46%;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+}
+.under_50 .shoping_items .decor, .bedding_and_bath{
+    margin-top: 20px;
+}
+.under_50 .shoping_items .kitchen_and_dining{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_315_HP_NewArrivals_QuadCard_D_01_1x._SY116_CB555960040_.jpg");
+}
+.under_50 .shoping_items .kitchen_and_dining::before{
+    content: "Kitchen and Dining";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.under_50 .shoping_items .home_improvement{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_316_HP_NewArrivals_QuadCard_D_02_1x._SY116_CB555960040_.jpg");
+}
+.under_50 .shoping_items .home_improvement::before{
+    content: "Home Improvement";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.under_50 .shoping_items .decor{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg");
+}
+.under_50 .shoping_items .decor::before{
+    content: "Decor";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.under_50 .shoping_items .bedding_and_bath{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg");
+}
+.under_50 .shoping_items .bedding_and_bath::before{
+    content: "Bedding and Bath";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.refresh_space .shoping_items .dining{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg");
+}
+.refresh_space .shoping_items .dining::before{
+    content: "Dining";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.refresh_space .shoping_items .home{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg");
+}
+.refresh_space .shoping_items .home::before{
+    content: "Home";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.refresh_space .shoping_items .kitchen{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg");
+}
+.refresh_space .shoping_items .kitchen::before{
+    content: "Kitchen";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.refresh_space .shoping_items .health_and_beauty{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg");
+}
+.refresh_space .shoping_items .health_and_beauty::before{
+    content: "Health and Beauty";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.easy_update .shoping_items{
+    height: 262px;
+}
+.easy_update .shoping_items #easy_update_difer_size{
+    position: relative;
+    width: 46%;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+}
+.easy_update .shoping_items .accent_furniture, .wallpaper_and_paint{
+    margin-top: 20px;
+}
+.easy_update .shoping_items .baskets_and_hampers{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg");
+}
+.easy_update .shoping_items .baskets_and_hampers::before{
+    content: "Baskets and Hamp..";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    overflow:inherit;
+}
+.easy_update .shoping_items .hardware{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg");
+}
+.easy_update .shoping_items .hardware::before{
+    content: "Hardware";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.easy_update .shoping_items .accent_furniture{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_AccentFurniture_D_Quad_186x116._SY116_CB594237035_.jpg");
+}
+.easy_update .shoping_items .accent_furniture::before{
+    content: "Accent Furniture";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.easy_update .shoping_items .wallpaper_and_paint{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Hallway_D_Quad_186x116._SY116_CB594237035_.jpg");
+}
+.easy_update .shoping_items .wallpaper_and_paint::before{
+    content: "Wallpaper and Paint";
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.content_container .product_container_sec{
+    width: 100%;
+    height: auto;
+    padding-left: 12px;   
+    padding-bottom: 10px;
+    padding-right: 12px;
+}
+.product_container_sec .product_box_for_2{
+    position: relative;
+    width: 1309px;
+    height: 285px;
+    background: white;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 15px 20px 15px 20px;
+}
+.product_box_for_2 h1{
+    font-size: 20px;
+}
+.product_container_sec .product_box_for_3{
+    position: relative;
+    width: 1309px;
+    height: 285px;
+    background: white;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 15px 20px 15px 20px;
+}
+.product_box_for_3 h1{
+    font-size: 20px;
+}
+.product_box_for_2 .shoping_items_box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 230px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+}
+.product_box_for_3 .shoping_items_box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 230px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+}
+.shoping_items_box .shop_items {
+    min-width: 140px;
+    max-width: 250px;
+    width: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.product_box_for_2 .shoping_items_box::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 20px;
+}
+.product_box_for_2 .shoping_items_box::-webkit-scrollbar {
+    background: transparent; /* Optional: track color */
+    height: 8px; /* Optional: makes the scrollbar visible */
+    border-radius: 20px;
+}
+.product_box_for_2:hover .shoping_items_box::-webkit-scrollbar-thumb  {
+    background: #ccc; /* Optional: hover color */
+}
+
+.product_box_for_3 .shoping_items_box::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 20px;
+}
+.product_box_for_3 .shoping_items_box::-webkit-scrollbar {
+    background: transparent; /* Optional: track color */
+    height: 8px; /* Optional: makes the scrollbar visible */
+    border-radius: 20px;
+}
+.product_box_for_3:hover .shoping_items_box::-webkit-scrollbar-thumb  {
+    background: #ccc; /* Optional: hover color */
+}
+.sign_in_recommendation {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.sign_in_recommendation .sign_in_recommendation_box {
+    position: relative;
+    width: 100%;
+    height: 115px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .1px solid #2222;
+    border-top: .1px solid #2222;
+}
+.sign_in_recommendation_box h1{
+    font-size: 25px;
+}
+.sign_in_recommendation_box .sign_in{
+    outline: none;
+    border: none;
+    width: 220px;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #ffd814;
+    color: black;
+}
+.sign_in_recommendation_box .sign_in:hover{
+    cursor: pointer;
+    background-color: #f1cc10;
+}
+.sign_in_recommendation_box p{
+    font-size: 11px;
+    margin-top: 10px;
+}
+.sign_in_recommendation_box p a{
+    text-decoration: underline;
+}
+.footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #232f3e;
+    color: white;
+    align-items: center;
+}
+.back_on_top{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #37475a;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.footer .div1{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1 .div1_content{
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div1 .div_1_divs{
+    width: 200px;
+    height: 250px;
+}
+.div1 .div_1_divs h1{
+    font-size: 15px;
+}
+.div1 .div_1_divs ul li{
+    list-style: none;
+    font-size: 13px;
+    color: #DDD;
+    margin-top: 10px;
+}
+.div1 .div_1_divs ul li:hover{
+    text-decoration: underline;
+}
+.lang_preferences{
+    width: 100%;
+    height: 100px;
+    border-top: .01px solid rgba(221, 221, 221, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang_preference_box{
+    display: flex;
+    position: relative;
+    width: 700px;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#footer_amazon_logo{
+    margin-top: 15px;
+}
+.lang_preference_box .select_lang{
+    display: flex;
+    border: 1px solid rgba(221, 221, 221, .9);
+    width: 130px;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    color: #ddd;
+    border-radius: 3px;
+}
+.lang_preference_box .select_currency{
+    display: flex;
+    border: 1px solid rgba(221, 221, 221, .9);
+    width: 140px;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    color: #ddd;
+    border-radius: 3px;
+}
+
+.lang_preference_box .select_country{
+    display: flex;
+    border: 1px solid rgba(221, 221, 221, .9);
+    width: 140px;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    color: #ddd;
+    border-radius: 3px;
+}
+.footer .div2{
+    position: relative;
+    width: 100%;
+    height: 440px;
+    background-color: #131a22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.div2 .div_2_container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+.div2 .div_2_container ul{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    margin-left: 0;
+    align-items: center;
+}
+.div2 .div_2_container ul li{
+    font-size: 12px !important;
+    padding: 0 .75em;
+    vertical-align: top;
+    list-style: none;
+    text-align: left;
+    line-height: 115%;
+}
+.div2 .div_2_container h1{
+    font-size: 12px;
+    color: #DDD;
+}
+.div2 .div_2_container span{
+    font-size: 11px;
+    color: #999;
+}
+.space_between_li{
+    width: 3%;
+}
+.footer .website_info{
+    position: relative;
+    width: 100%;
+    height: 77px;
+    padding: 10px 0 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #131a22;
+}
+.footer .website_info ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer .website_info ul li{
+    list-style: none;
+    color: white;
+    font-size: 12px;
+    margin: 0 10px;
+}
+.footer .website_info ul li:hover{
+    text-decoration: underline;
+}
+.footer .website_info span{
+    font-size: 11px;
+}
