@@ -29,7 +29,6 @@ body{
     align-items: start;
 }
 .nav_bar {
-    position: sticky;
     top: 0;
     display: flex;
     width: 100%;
@@ -990,7 +989,7 @@ body{
 .footer .div2{
     position: relative;
     width: 100%;
-    height: 440px;
+    height: 380px;
     background-color: #131a22;
     display: flex;
     justify-content: center;
@@ -1010,7 +1009,6 @@ body{
     justify-content: flex-start;
     margin-bottom: 15px;
     margin-left: 0;
-    align-items: center;
 }
 .div2 .div_2_container ul li{
     font-size: 12px !important;
@@ -1022,6 +1020,7 @@ body{
 }
 .div2 .div_2_container h1{
     font-size: 12px;
+    font-weight: 400;
     color: #DDD;
 }
 .div2 .div_2_container span{
